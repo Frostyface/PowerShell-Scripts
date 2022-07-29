@@ -1,0 +1,1 @@
+Get-ChildItem -Path "C:\Users\mmajercin\OneDrive - Scottsdale Unified School District\Documents\PowerShell_Scripts\Junk4" -Recurse | Where-Object {($_.CreationTime -lt (Get-Date).AddDays(-30))} | Remove-Item
